@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "openai": "^3.2.1"
   },
   "devDependencies": {
     "@line/bot-sdk": "^7.5.2",

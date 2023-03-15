@@ -3,6 +3,10 @@ import https from "https";
 const { LINE_CHANNEL_ACCESS_TOKEN } = process.env;
 
 export const lineReply = (replyToken: string, text: string) => {
+  if (!text) {
+    console.log("message is empty");
+    return;
+  }
   const body = JSON.stringify({
     replyToken,
     messages: [{ type: "text", text }],
